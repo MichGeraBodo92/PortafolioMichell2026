@@ -13,8 +13,9 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100dvh;
+body,html{
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +43,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.463);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
     position: fixed;
     top: 0;
-    width: 96%;
     z-index: 1000;
     border-bottom: solid 2px rgba(255, 255, 255, 0.463);
     border-radius: 0 0 10px 10px;
@@ -59,13 +59,13 @@ body{
 .main-container{
     display: flex;
     width: 100dvw;
-    height: 80dvh;
+    height: 100dvh;
     background-color: var(--color-primario);
     color: whitesmoke;
 }
 
 .div-a-container{
-    width: 55%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
 }
@@ -134,4 +134,64 @@ body{
 
 .imagen-redes:hover{
     filter: drop-shadow(0px 0px 15px var(--color-acento));
+}
+
+.section-container{
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-sobremi{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.contenedor-imagen, .contenedor-info{
+    width: 50%;
+}
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.texto-sobremi{
+    margin-top: 10px;
+    font-size: 25px;
+    color: rgb(44, 43, 43);
+}
+
+.escritorio{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid var(--color-acento);
+    filter: drop-shadow(0px 0px 15px var(--color-acento));
+}
+
+.escritorio:hover{
+    border: 2px solid rgb(224, 103, 56);
+    filter: drop-shadow(0px 0px 15px rgb(224, 103, 56));
+}
+
+.tecnologias-carrusel{
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
