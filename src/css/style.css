@@ -192,6 +192,48 @@ body,html{
     height: 100dvh;
     background-color: var(--color-primario);
     display: flex;
+    overflow-x: auto;
+}
+
+.tecnologias-carrusel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 25s infinite linear;
+    padding-right: 1em;
+}
+
+.card{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
 }
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+.imagen-card{
+    width: 180px;
+    height: 180px;
+    opacity: 0.5;
+}
+
+.imagen-card:hover{
+    opacity: 1;
+    filter: drop-shadow(0px 5px 55px rgb(184, 14, 235));
+}
+
