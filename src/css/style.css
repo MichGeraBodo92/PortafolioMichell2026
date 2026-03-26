@@ -19,20 +19,20 @@ body{
     align-items: center;
     justify-content: flex-end;
     background-color: var(--color-primario);
+    font-family: "Datatype", monospace;
 }
 
-a{
+.nav-a{
     text-decoration: none;
     color:black;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bolder;
 }
 
-a:hover{
+.nav-a:hover{
     color: var(--color-acento);
     border-bottom: 2px solid var(--color-acento);
     z-index: 1000;
-    font-weight: bolder;
 }
 
 .nav-container{
@@ -48,6 +48,11 @@ a:hover{
     width: 96%;
     z-index: 1000;
     border-bottom: solid 2px rgba(255, 255, 255, 0.463);
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-container p{
+    margin-left: 10px;
 }
 
 .main-container{
@@ -80,3 +85,47 @@ a:hover{
     align-items: center;
 }
 
+.nombre-p{
+    color: var(--color-primario);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.apellido-p{
+    color: var(--color-acento);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.div-container-info p, .div-container-info h1{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.div-container-info p{
+    font-size: 20px;
+    color: gray;
+    font-weight: 500;
+}
+
+.div-container-info h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.button-redes{
+    background-color: var(--color-primario);
+}
+
+.imagen-redes{
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin: 15px 10px 0 10px;
+}
+
+.imagen-redes:hover{
+    filter: drop-shadow(0px 0px 15px var(--color-acento));
+}
