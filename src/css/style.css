@@ -1,0 +1,82 @@
+/*PALETAS DE COLORES DE LA PAGINA WEB*/
+:root{
+    --color-primario : #1E293B; /*AZUL MEDIANOCHE*/
+    --color-secundario : #E0F2FE; /*AZUL GLACIAR*/
+    --color-acento : #4ADE80; /*VERDE MENTA*/
+    --color-fondo : #475569; /*AZUL ACERO*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--color-primario);
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a:hover{
+    color: var(--color-acento);
+    border-bottom: 2px solid var(--color-acento);
+    z-index: 1000;
+    font-weight: bolder;
+}
+
+.nav-container{
+    width: 96%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.463);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    width: 96%;
+    z-index: 1000;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.463);
+}
+
+.main-container{
+    display: flex;
+    width: 100dvw;
+    height: 80dvh;
+    background-color: var(--color-primario);
+    color: whitesmoke;
+}
+
+.div-a-container{
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagen-mia{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: solid 5px var(--color-acento);
+    filter: drop-shadow(5px 5px 10px var(--color-acento));
+}
+
+.div-container-img,.div-container-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
