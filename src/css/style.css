@@ -7,12 +7,14 @@
     --color-imagen : #0aa8ec;
 }
 
+/*ESTILOS GENERALES DE LA PAGINA*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*ESTILOS GENERALES A EL BODY Y HTML*/
 body,html{
     width: 100%;
     overflow-x: hidden;
@@ -24,6 +26,7 @@ body,html{
     font-family: "Datatype", monospace;
 }
 
+/*ESTILOS A LA NAVEGACION*/
 .nav-a{
     text-decoration: none;
     color:black;
@@ -38,18 +41,12 @@ body,html{
 }
 
 .nav-container{
-    width: 96%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(15px);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.463);
-    border-radius: 0 0 10px 10px;
+    
+}
+
+/*MEDIA QUERIES PARA LA NAVEGACION*/
+@media (max-width: 648px) {
+    
 }
 
 .nav-container p{
